@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sports"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/drawer_item_sports" />
+        <item
+            android:id="@+id/nav_punch"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/drawer_item_punch" />
+        <item
+            android:id="@+id/nav_preferences"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/drawer_item_preferences" />
+    </group>
+
+    <item android:title="@string/system">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/drawer_item_settings"/>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/drawer_item_help" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/drawer_item_feedback" />
+        </menu>
+    </item>
+
+</menu>

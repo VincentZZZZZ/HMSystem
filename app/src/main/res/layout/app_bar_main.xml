@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,14 +23,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <FrameLayout
-        android:id="@+id/ContentWrapper"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        >
-    </FrameLayout>
-
+    <include layout="@layout/content_wrapper" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/docky"
@@ -37,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/colorBackground"
-        app:menu="@menu/docky" />
+        app:menu="@menu/docky"
+        app:layout_behavior="com.example.sion10032.hmsystem.behavior.BottomNavigationBehavior"/>
 
 </android.support.design.widget.CoordinatorLayout>

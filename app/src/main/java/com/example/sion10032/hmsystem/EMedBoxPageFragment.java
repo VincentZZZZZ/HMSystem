@@ -38,7 +38,7 @@ public class EMedBoxPageFragment extends Fragment {
     public String[] getStringText(){
         String[] tmp = new String[50];
         for(int i = 0; i < 50; ++i){
-            tmp[i] = "Med #" + i +".";
+            tmp[i] = "Med #" + i +"";
         }
         return tmp;
     }
@@ -72,7 +72,7 @@ class EMedBoxAdapter extends RecyclerView.Adapter<EMedBoxAdapter.ViewHolder> {
         public TextView mTextView;
         public ViewHolder(View view){
             super(view);
-            mTextView = view.findViewById(R.id.MedText);
+            mTextView = view.findViewById(R.id.MedName);
         }
     }
 }

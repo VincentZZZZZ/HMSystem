@@ -5,5 +5,6 @@ package com.example.sion10032.hmsystem.backend;
  * On 11/9/17.
  */
 
-public class User {
+public class Account {
+
 }

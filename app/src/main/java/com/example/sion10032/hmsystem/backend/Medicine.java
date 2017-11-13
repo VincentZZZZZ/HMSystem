@@ -1,6 +1,7 @@
 package com.example.sion10032.hmsystem.backend;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 /**
  * Created by sion10032
@@ -8,23 +9,30 @@ import java.io.Serializable;
  */
 
 public class Medicine implements Serializable {
-
+    private UUID mUUID;
     private String mName;
     private String mDescription;
     private String mImgPath;
-    private int mRemain;
+    private int mRemains;
     private boolean isUsing;
 
-    Medicine(String name, String description, String imgPath, int remain, boolean isUsing){
+    public Medicine(UUID uuid, String name, String description, String imgPath, int remains, boolean isUsing){
+        this.mUUID = uuid;
         this.mName = name;
         this.mDescription = description;
         this.mImgPath = imgPath;
-        this.mRemain = remain;
+        this.mRemains = remains;
         this.isUsing = isUsing;
     }
 
 
+    public UUID getUUID() {
+        return mUUID;
+    }
 
+    public void setUUID(UUID mUUID) {
+        this.mUUID = mUUID;
+    }
 
     public String getName() {
         return mName;
@@ -50,12 +58,12 @@ public class Medicine implements Serializable {
         this.mImgPath = mImgPath;
     }
 
-    public int getRemain() {
-        return mRemain;
+    public int getRemains() {
+        return mRemains;
     }
 
-    public void setRemain(int mRemain) {
-        this.mRemain = mRemain;
+    public void setRemains(int mRemains) {
+        this.mRemains = mRemains;
     }
 
     public boolean isUsing() {
